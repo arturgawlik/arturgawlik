@@ -1,0 +1,40 @@
+:host {
+    display: grid;
+    overflow: scroll;
+}
+
+.desc {
+    justify-self: center;
+    /* align-self: center; */
+    font-family: sans-serif;
+    font-weight: 300;
+    /* text-transform: uppercase; */
+    padding: 20px;
+    width: 500px;
+    margin-top: 25px;
+    letter-spacing: 2px;
+    line-height: 2;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 300;
+    margin: 1px;
+    letter-spacing: 10px;
+    line-height: 1;
+}
+
+a {
+    display: inline;
+    /* color: olivedrab; */
+    /* border: 1px solid black; */
+    /* padding-left: 10px; */
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background: tomato;
+}

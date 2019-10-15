@@ -1,0 +1,9 @@
+:host {
+    padding: 20px;
+    align-items: center;
+    border-top: 2px solid palevioletred;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+}

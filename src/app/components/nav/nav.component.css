@@ -1,0 +1,61 @@
+:host {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto;
+    border-bottom: 2px solid greenyellow;
+    justify-items: start;
+}
+
+.btn {
+    background: none;
+    border: 1px solid black;
+    /* border: none; */
+    padding: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    outline:none;
+}
+
+.btn:hover {
+    box-shadow: 2px 2px ;
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+.btn-hf:hover {
+    /* background: papayawhip; */
+    background: lightpink;
+}
+
+.btn-hf {
+    letter-spacing: 35px;
+}
+
+.btn-tw:hover {
+    background: #83c9ff;
+}
+
+.btn-gh:hover {
+    background: rgb(160, 160, 160);
+}
+
+.btn-li:hover {
+    background: #31a6ff;
+}
+
+.noselect {
+    user-select: none;
+}
+
+a {
+    font-family: sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+}
