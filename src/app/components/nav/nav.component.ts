@@ -8,18 +8,10 @@ import { Router } from '@angular/router';
 })
 export class NavComponent implements OnInit {
 
-  constructor(private router: Router) {
+  constructor(public router: Router) {
    }
 
   ngOnInit() {
-  }
-
-  hfClick() {
-    this.router.navigate(['']);
-  }
-
-  cvClick() {
-    this.router.navigate(['cv']);
   }
 
 }
