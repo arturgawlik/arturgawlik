@@ -7,6 +7,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MainComponent } from './components/main/main.component';
 import { CvComponent } from './components/cv/cv.component';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CvComponent } from './components/cv/cv.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ScullyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
