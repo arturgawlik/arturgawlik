@@ -1,12 +1,13 @@
 :host {
     padding: 20px;
     display: grid;
-    grid-template-columns: 1fr auto auto auto auto;
+    grid-template-columns: 1fr auto auto auto auto auto;
     border-bottom: 2px solid greenyellow;
     justify-items: start;
 }
 
 .btn {
+    width: 80px;
     background: none;
     border: 1px solid black;
     /* border: none; */
@@ -15,9 +16,9 @@
     text-transform: uppercase;
     margin-right: 10px;
     margin-left: 10px;
-    cursor: pointer;
     font-size: 12px;
     outline:none;
+    text-align: center;
 }
 
 .btn:hover {
@@ -35,6 +36,10 @@
 
 .btn-hf {
     letter-spacing: 35px;
+}
+
+.btn-cv:hover {
+    background: orange;
 }
 
 .btn-tw:hover {
@@ -58,4 +63,5 @@ a {
     font-weight: 300;
     text-decoration: none;
     color: black;
+    cursor: default;
 }

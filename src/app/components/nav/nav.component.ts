@@ -18,4 +18,8 @@ export class NavComponent implements OnInit {
     this.router.navigate(['']);
   }
 
+  cvClick() {
+    this.router.navigate(['cv']);
+  }
+
 }

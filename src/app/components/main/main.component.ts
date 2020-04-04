@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MainComponent implements OnInit {
 
   // hrefArray = 'mailto:artur.gawlik@icloud.com';
-  private hrefArray = ['m', 'a', 'i', 'l', 't', 'o', ':', 'a', 'r', 't', 'u', 'r', 'g', 'a', 'w', 'l', 'i', 'k', '@', 'i', 'c', 'l', 'o', 'u', 'd', '.', 'c', 'o', 'm']
+  private hrefArray = ['m', 'a', 'i', 'l', 't', 'o', ':', 'a', 'r', 't', 'u', 'r', '.', 'g', 'a', 'w', 'l', 'i', 'k', '@', 'i', 'c', 'l', 'o', 'u', 'd', '.', 'c', 'o', 'm']
 
   
   get href() {
