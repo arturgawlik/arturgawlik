@@ -1,13 +1,185 @@
-<!doctype html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Scully 0.0.86">
   <meta charset="utf-8">
   <title>Hufcio</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="stylesheet" href="styles.16ee39f0a58d97aba778.css"></head>
-<body>
-  <app-root></app-root>
-<script src="runtime-es2015.c9afb3256f2870e161de.js" type="module"></script><script src="runtime-es5.c9afb3256f2870e161de.js" nomodule defer></script><script src="polyfills-es5.4e0d72afcb063c963925.js" nomodule defer></script><script src="polyfills-es2015.30b2b6771cf654f12206.js" type="module"></script><script src="main-es2015.2dc8974b62fd62275f59.js" type="module"></script><script src="main-es5.2dc8974b62fd62275f59.js" nomodule defer></script></body>
-</html>
+<style>/* You can add global styles to this file, and also import other style files */
+body,html {
+    margin: 0;
+    padding: 0;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zdHlsZXMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDhFQUE4RTtBQUM5RTtJQUNJLFNBQVM7SUFDVCxVQUFVO0FBQ2QiLCJmaWxlIjoic3JjL3N0eWxlcy5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBZb3UgY2FuIGFkZCBnbG9iYWwgc3R5bGVzIHRvIHRoaXMgZmlsZSwgYW5kIGFsc28gaW1wb3J0IG90aGVyIHN0eWxlIGZpbGVzICovXG5ib2R5LGh0bWwge1xuICAgIG1hcmdpbjogMDtcbiAgICBwYWRkaW5nOiAwO1xufSJdfQ== */</style><style>[_nghost-swf-c22] {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxhQUFhO0lBQ2IsYUFBYTtJQUNiLHNDQUFzQztBQUMxQyIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiOmhvc3Qge1xuICAgIGhlaWdodDogMTAwdmg7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLXJvd3M6IGF1dG8gYXV0byAxZnIgYXV0bztcbn1cbiJdfQ== */</style><style>[_nghost-swf-c20] {
+  padding: 20px;
+  border-bottom: 2px solid greenyellow;
+}
+
+.nav-button-container[_ngcontent-swf-c20] {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto auto auto;
+  justify-items: start;
+}
+
+.btn[_ngcontent-swf-c20] {
+  width: 80px;
+  background: none;
+  border: 1px solid black;
+  
+  padding: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 12px;
+  outline: none;
+  text-align: center;
+}
+
+.btn[_ngcontent-swf-c20]:hover {
+  box-shadow: 2px 2px;
+}
+
+.btn[_ngcontent-swf-c20]:active {
+  box-shadow: none;
+}
+
+.btn-hf[_ngcontent-swf-c20]:hover {
+  
+  background: lightpink;
+}
+
+.btn-cv[_ngcontent-swf-c20]:hover {
+  background: orange;
+}
+
+.btn-tw[_ngcontent-swf-c20]:hover {
+  background: #83c9ff;
+}
+
+.btn-gh[_ngcontent-swf-c20]:hover {
+  background: rgb(160, 160, 160);
+}
+
+.btn-li[_ngcontent-swf-c20]:hover {
+  background: #31a6ff;
+}
+
+.noselect[_ngcontent-swf-c20] {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+a[_ngcontent-swf-c20] {
+  font-family: sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+
+
+
+.bar1[_ngcontent-swf-c20], .bar2[_ngcontent-swf-c20], .bar3[_ngcontent-swf-c20] {
+  width: 35px;
+  height: 1px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+  transform-origin: top right;
+}
+
+.open[_ngcontent-swf-c20]   .bar1[_ngcontent-swf-c20] {
+  transform: rotate(-20deg);
+  width: 40px;
+}
+
+.open[_ngcontent-swf-c20]   .bar2[_ngcontent-swf-c20] {
+  opacity: 0;
+}
+
+.open[_ngcontent-swf-c20]   .bar3[_ngcontent-swf-c20] {
+  transform: rotate(20deg);
+  width: 40px;
+}
+
+.container[_ngcontent-swf-c20] {
+  display: none;
+}
+
+@media only screen and (max-width: 570px) {
+  .container[_ngcontent-swf-c20] {
+    display: block;
+  }
+
+  .nav-button-container[_ngcontent-swf-c20] {
+    display: none;
+  }
+
+  .nav-button-container.open[_ngcontent-swf-c20] {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-items: center;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9uYXYvbmF2LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFhO0VBQ2Isb0NBQW9DO0FBQ3RDOztBQUVBO0VBQ0UsYUFBYTtFQUNiLG1EQUFtRDtFQUNuRCxvQkFBb0I7QUFDdEI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLHVCQUF1QjtFQUN2QixrQkFBa0I7RUFDbEIsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQix5QkFBeUI7RUFDekIsa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixlQUFlO0VBQ2YsYUFBYTtFQUNiLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLDRCQUE0QjtFQUM1QixxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSw4QkFBOEI7QUFDaEM7O0FBRUE7RUFDRSxtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSx5QkFBaUI7S0FBakIsc0JBQWlCO01BQWpCLHFCQUFpQjtVQUFqQixpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSx1QkFBdUI7RUFDdkIsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtFQUNyQixZQUFZO0VBQ1osZUFBZTtBQUNqQjs7QUFFQSxLQUFLOztBQUNMOzs7RUFHRSxXQUFXO0VBQ1gsV0FBVztFQUNYLHNCQUFzQjtFQUN0QixhQUFhO0VBQ2IsZ0JBQWdCO0VBQ2hCLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxVQUFVO0FBQ1o7O0FBRUE7RUFDRSx3QkFBd0I7RUFDeEIsV0FBVztBQUNiOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0U7SUFDRSxjQUFjO0VBQ2hCOztFQUVBO0lBQ0UsYUFBYTtFQUNmOztFQUVBO0lBQ0UsYUFBYTtJQUNiLDBCQUEwQjtJQUMxQixTQUFTO0lBQ1QscUJBQXFCO0VBQ3ZCO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL25hdi9uYXYuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0IHtcbiAgcGFkZGluZzogMjBweDtcbiAgYm9yZGVyLWJvdHRvbTogMnB4IHNvbGlkIGdyZWVueWVsbG93O1xufVxuXG4ubmF2LWJ1dHRvbi1jb250YWluZXIge1xuICBkaXNwbGF5OiBncmlkO1xuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciBhdXRvIGF1dG8gYXV0byBhdXRvIGF1dG87XG4gIGp1c3RpZnktaXRlbXM6IHN0YXJ0O1xufVxuXG4uYnRuIHtcbiAgd2lkdGg6IDgwcHg7XG4gIGJhY2tncm91bmQ6IG5vbmU7XG4gIGJvcmRlcjogMXB4IHNvbGlkIGJsYWNrO1xuICAvKiBib3JkZXI6IG5vbmU7ICovXG4gIHBhZGRpbmc6IDEwcHg7XG4gIGxldHRlci1zcGFjaW5nOiAzcHg7XG4gIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG4gIG1hcmdpbi1yaWdodDogMTBweDtcbiAgbWFyZ2luLWxlZnQ6IDEwcHg7XG4gIGZvbnQtc2l6ZTogMTJweDtcbiAgb3V0bGluZTogbm9uZTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uYnRuOmhvdmVyIHtcbiAgYm94LXNoYWRvdzogMnB4IDJweDtcbn1cblxuLmJ0bjphY3RpdmUge1xuICBib3gtc2hhZG93OiBub25lO1xufVxuXG4uYnRuLWhmOmhvdmVyIHtcbiAgLyogYmFja2dyb3VuZDogcGFwYXlhd2hpcDsgKi9cbiAgYmFja2dyb3VuZDogbGlnaHRwaW5rO1xufVxuXG4uYnRuLWN2OmhvdmVyIHtcbiAgYmFja2dyb3VuZDogb3JhbmdlO1xufVxuXG4uYnRuLXR3OmhvdmVyIHtcbiAgYmFja2dyb3VuZDogIzgzYzlmZjtcbn1cblxuLmJ0bi1naDpob3ZlciB7XG4gIGJhY2tncm91bmQ6IHJnYigxNjAsIDE2MCwgMTYwKTtcbn1cblxuLmJ0bi1saTpob3ZlciB7XG4gIGJhY2tncm91bmQ6ICMzMWE2ZmY7XG59XG5cbi5ub3NlbGVjdCB7XG4gIHVzZXItc2VsZWN0OiBub25lO1xufVxuXG5hIHtcbiAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XG4gIGZvbnQtd2VpZ2h0OiAzMDA7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgY29sb3I6IGJsYWNrO1xuICBjdXJzb3I6IGRlZmF1bHQ7XG59XG5cbi8qICAqL1xuLmJhcjEsXG4uYmFyMixcbi5iYXIzIHtcbiAgd2lkdGg6IDM1cHg7XG4gIGhlaWdodDogMXB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMzMzO1xuICBtYXJnaW46IDZweCAwO1xuICB0cmFuc2l0aW9uOiAwLjRzO1xuICB0cmFuc2Zvcm0tb3JpZ2luOiB0b3AgcmlnaHQ7XG59XG5cbi5vcGVuIC5iYXIxIHtcbiAgdHJhbnNmb3JtOiByb3RhdGUoLTIwZGVnKTtcbiAgd2lkdGg6IDQwcHg7XG59XG5cbi5vcGVuIC5iYXIyIHtcbiAgb3BhY2l0eTogMDtcbn1cblxuLm9wZW4gLmJhcjMge1xuICB0cmFuc2Zvcm06IHJvdGF0ZSgyMGRlZyk7XG4gIHdpZHRoOiA0MHB4O1xufVxuXG4uY29udGFpbmVyIHtcbiAgZGlzcGxheTogbm9uZTtcbn1cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA1NzBweCkge1xuICAuY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgfVxuXG4gIC5uYXYtYnV0dG9uLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogbm9uZTtcbiAgfVxuXG4gIC5uYXYtYnV0dG9uLWNvbnRhaW5lci5vcGVuIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyO1xuICAgIGdhcDogMTBweDtcbiAgICBqdXN0aWZ5LWl0ZW1zOiBjZW50ZXI7XG4gIH1cbn1cbiJdfQ== */</style><style>[_nghost-swf-c21] {
+    padding: 20px;
+    align-items: center;
+    border-top: 2px solid palevioletred;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9mb290ZXIvZm9vdGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLG1DQUFtQztJQUNuQyx5QkFBeUI7SUFDekIsa0JBQWtCO0lBQ2xCLGVBQWU7SUFDZixtQkFBbUI7QUFDdkIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0IHtcbiAgICBwYWRkaW5nOiAyMHB4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgYm9yZGVyLXRvcDogMnB4IHNvbGlkIHBhbGV2aW9sZXRyZWQ7XG4gICAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgZm9udC1zaXplOiAxMnB4O1xuICAgIGxldHRlci1zcGFjaW5nOiAycHg7XG59XG4iXX0= */</style><style>[_nghost-swf-c18] {
+    display: grid;
+    overflow: scroll;
+}
+
+.desc[_ngcontent-swf-c18] {
+    justify-self: center;
+    font-family: sans-serif;
+    font-weight: 300;
+    padding: 20px;
+    max-width: 500px;
+    margin-top: 25px;
+    letter-spacing: 2px;
+    line-height: 2;
+    text-align: justify;
+}
+
+h1[_ngcontent-swf-c18] {
+    font-size: 80px;
+    font-weight: 300;
+    margin: 1px;
+    letter-spacing: 10px;
+    line-height: 1;
+}
+
+a[_ngcontent-swf-c18] {
+    display: inline;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+a[_ngcontent-swf-c18]:hover {
+    background: tomato;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9tYWluL21haW4uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGFBQWE7SUFDYixnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxvQkFBb0I7SUFDcEIsdUJBQXVCO0lBQ3ZCLGdCQUFnQjtJQUNoQixhQUFhO0lBQ2IsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixtQkFBbUI7SUFDbkIsY0FBYztJQUNkLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLGVBQWU7SUFDZixnQkFBZ0I7SUFDaEIsV0FBVztJQUNYLG9CQUFvQjtJQUNwQixjQUFjO0FBQ2xCOztBQUVBO0lBQ0ksZUFBZTtJQUNmLGVBQWU7SUFDZixxQkFBcUI7SUFDckIsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLGtCQUFrQjtBQUN0QiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbWFpbi9tYWluLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyI6aG9zdCB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBvdmVyZmxvdzogc2Nyb2xsO1xufVxuXG4uZGVzYyB7XG4gICAganVzdGlmeS1zZWxmOiBjZW50ZXI7XG4gICAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDMwMDtcbiAgICBwYWRkaW5nOiAyMHB4O1xuICAgIG1heC13aWR0aDogNTAwcHg7XG4gICAgbWFyZ2luLXRvcDogMjVweDtcbiAgICBsZXR0ZXItc3BhY2luZzogMnB4O1xuICAgIGxpbmUtaGVpZ2h0OiAyO1xuICAgIHRleHQtYWxpZ246IGp1c3RpZnk7XG59XG5cbmgxIHtcbiAgICBmb250LXNpemU6IDgwcHg7XG4gICAgZm9udC13ZWlnaHQ6IDMwMDtcbiAgICBtYXJnaW46IDFweDtcbiAgICBsZXR0ZXItc3BhY2luZzogMTBweDtcbiAgICBsaW5lLWhlaWdodDogMTtcbn1cblxuYSB7XG4gICAgZGlzcGxheTogaW5saW5lO1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgY29sb3I6IGJsYWNrO1xufVxuXG5hOmhvdmVyIHtcbiAgICBiYWNrZ3JvdW5kOiB0b21hdG87XG59XG4iXX0= */</style><script>window['ScullyIO']='generated';</script></head>
+<body scully-version="0.0.86">
+  <app-root _nghost-swf-c22="" ng-version="9.1.0"><app-nav _ngcontent-swf-c22="" _nghost-swf-c20=""><div _ngcontent-swf-c20="" class="container"><div _ngcontent-swf-c20="" class="bar1"></div><div _ngcontent-swf-c20="" class="bar2"></div><div _ngcontent-swf-c20="" class="bar3"></div></div><div _ngcontent-swf-c20="" class="nav-button-container"><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><div _ngcontent-swf-c20=""></div><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><a _ngcontent-swf-c20="" class="btn btn-cv noselect" ng-reflect-router-link="/cv" href="/cv">CV</a><a _ngcontent-swf-c20="" href="https://github.com/arturgawlik" target="_blank" class="btn btn-gh noselect">github</a><a _ngcontent-swf-c20="" href="https://twitter.com/gawlikU" target="_blank" class="btn btn-tw noselect">twitter</a><a _ngcontent-swf-c20="" href="https://www.linkedin.com/in/artur-gawlik-026552149" target="_blank" class="btn btn-li noselect">linkedin</a></div></app-nav><router-outlet _ngcontent-swf-c22=""></router-outlet><app-main _nghost-swf-c18=""><section _ngcontent-swf-c18="" class="desc"><h1 _ngcontent-swf-c18="">Cześć,</h1> nazywam się Artur Gawlik<b _ngcontent-swf-c18="">,</b> jestem fullstack developerem<b _ngcontent-swf-c18="">.</b> Jestem absolwentem Informatyki Stosowanej ze specjalnością Inzynieria Oprogramowania na Uniwersytecie Ekonomicznym w Krakowie<b _ngcontent-swf-c18="">.</b> Technologie w których najlepiej się czuję to Angular i .NET<b _ngcontent-swf-c18="">.</b> Możesz się ze mną kontaktować poprzez maila <a _ngcontent-swf-c18="" href="mailto:artur.gawlik@icloud.com">artur.gawlik at icloud.com</a><b _ngcontent-swf-c18="">.</b></section></app-main><!--container--><app-footer _ngcontent-swf-c22="" _nghost-swf-c21="">created with love and angular by hufcio</app-footer></app-root>
+<script id="ScullyIO-transfer-state"></script><script src="runtime-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule="" defer=""></script><script src="polyfills-es5.js" nomodule="" defer=""></script><script src="polyfills-es2015.js" type="module"></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule="" defer=""></script><script src="vendor-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule="" defer=""></script><script src="main-es2015.js" type="module"></script><script src="main-es5.js" nomodule="" defer=""></script>
+
+</body></html>
