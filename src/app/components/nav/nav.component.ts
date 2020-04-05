@@ -8,10 +8,16 @@ import { Router } from '@angular/router';
 })
 export class NavComponent implements OnInit {
 
+  smallMenuOpened = false;
+
   constructor(public router: Router) {
-   }
+  }
 
   ngOnInit() {
+  }
+
+  toggleSmallMenuOpen() {
+    this.smallMenuOpened = !this.smallMenuOpened;
   }
 
 }
