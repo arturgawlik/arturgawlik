@@ -1,7 +1,7 @@
 exports.config = {
   projectRoot: "./src",
   projectName: "hufcio",
-  outDir: './dist/static',
+  outDir: './dist/hufcio',
   routes: {
   }
 };
