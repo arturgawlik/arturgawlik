@@ -1,6 +1,6 @@
 :host {
     display: grid;
-    overflow: scroll;
+    
 }
 
 .desc {
@@ -16,7 +16,7 @@
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 300;
     margin: 1px;
     letter-spacing: 10px;

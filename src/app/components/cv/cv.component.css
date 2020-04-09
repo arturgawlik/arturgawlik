@@ -1,4 +1,4 @@
-:host {
+/* :host {
     display: grid;
     overflow: scroll;
 }
@@ -13,4 +13,73 @@
     letter-spacing: 2px;
     line-height: 2;
     text-align: justify;
+} */
+
+:host {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(400px, 2fr);
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-y: scroll;
+
+    font-family: sans-serif;
+    font-weight: 300;
+    padding: 20px;
+}
+
+.cv-con {
+    /* display: grid;
+    overflow: scroll; */
+    border-left: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box {
+    margin: 20px;
+    max-width: 400px;
+}
+
+.box-header {
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    padding-left: 30px;
+    letter-spacing: 3px;
+}
+
+.box-content {
+    margin: 10px;
+}
+
+.with-image {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.box-content-img {
+    background: url("/assets/images/avatar.jpeg");
+    width: 85px;
+    height: 80px;
+}
+
+.box-content-text {
+ padding-left: 5px;
+ letter-spacing: 3px;
+ padding-top: 5px;
+}
+
+ul {
+    margin: 0;
+    padding-left: 25px;
+}
+
+small {
+    font-size: 8px;
+}
+
+.space {
+    margin-top: 10px;
+    /* background-color: black;
+    color: white;
+    display: inline-block; */
 }
