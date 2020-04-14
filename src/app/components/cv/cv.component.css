@@ -17,7 +17,9 @@
 
 :host {
     display: grid;
-    grid-template-columns: minmax(0,1fr) minmax(400px, 2fr);
+    /* grid-template-columns: minmax(0,1fr) minmax(400px, 2fr); */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    justify-items: center;
     padding-left: 10px;
     padding-right: 10px;
     overflow-y: scroll;
@@ -25,6 +27,7 @@
     font-family: sans-serif;
     font-weight: 300;
     padding: 20px;
+    text-overflow: clip;
 }
 
 .cv-con {
@@ -79,7 +82,25 @@ small {
 
 .space {
     margin-top: 10px;
-    /* background-color: black;
+}
+
+.header-color {
+    background-color: black;
     color: white;
-    display: inline-block; */
+    display: inline-block;
+}
+
+.close-to-top {
+    margin-top: -5px;
+}
+
+a {
+    display: inline;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background: tomato;
 }
