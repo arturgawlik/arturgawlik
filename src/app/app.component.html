@@ -1,3 +1,6 @@
 <app-nav></app-nav>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
+<button class="clear-draw-btn" (click)="drawService.clear()">♺</button>
+<button class="draw-btn" (click)="toggleZIndex()" [style.background-color]="toggleDrawBGColor">✎</button>
+<canvas draw [style.z-index]="drawZIndex"></canvas>

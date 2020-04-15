@@ -3,3 +3,33 @@
     display: grid;
     grid-template-rows: auto auto 1fr auto;
 }
+
+canvas {
+    position: absolute;
+}
+
+button {
+    position: absolute;
+    z-index: 2;
+    font-size: 24px;
+    background: none;
+    border: none;
+    outline: none;
+    user-select: none;
+}
+
+.draw-btn {
+    bottom: 5px;
+    right: 5px;
+}
+
+.clear-draw-btn {
+    bottom: 2px;
+    right: 40px;
+}
+
+@media only screen and (max-width: 650px) {
+    button {
+        display: none;
+    }
+}

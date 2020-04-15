@@ -8,6 +8,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MainComponent } from './components/main/main.component';
 import { CvComponent } from './components/cv/cv.component';
 import { ScullyLibModule } from '@scullyio/ng-lib';
+import { DrawDirective } from './directives/draw.directive';
+import { DrawService } from './directives/draw.service';
 
 @NgModule({
   declarations: [
@@ -15,14 +17,17 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
     NavComponent,
     FooterComponent,
     MainComponent,
-    CvComponent
+    CvComponent,
+    DrawDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ScullyLibModule
   ],
-  providers: [],
+  providers: [
+    DrawService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
