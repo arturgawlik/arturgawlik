@@ -5,6 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Build and deploy
 ```bash
 ng build --prod
-npx angular-cli-ghpages --dir .\dist\hufcio\
+npm run scully
+npx angular-cli-ghpages --dir .\dist\static\
 ```
 
